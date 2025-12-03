@@ -39,7 +39,7 @@ const Tracks = () => {
   ];
 
   return (
-    <section id="tracks" className="py-20 sm:py-32 bg-muted/20 relative overflow-hidden">
+    <section id="tracks" className="py-20 sm:py-32  relative overflow-hidden">
       {/* Fog Background */}
       <div className="absolute inset-0 bg-gradient-radial from-neon-red/10 via-transparent to-transparent opacity-20" />
 

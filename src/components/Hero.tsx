@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FileText, ArrowRight } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/bg.jpg";
 
 const Hero = () => {
   return (
@@ -9,42 +9,6 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroBg}
-          alt="Stranger Things themed dark forest"
-          className="w-full h-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background/90" />
-      </div>
-
-      {/* VHS Scan Lines Effect */}
-      <div className="absolute inset-0 vhs-effect z-10 pointer-events-none" />
-
-      {/* Animated Particles */}
-      <div className="absolute inset-0 z-10">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-neon-red rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [0, -30, 0],
-              opacity: [0.2, 0.8, 0.2],
-            }}
-            transition={{
-              duration: 3 + Math.random() * 3,
-              repeat: Infinity,
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
-      </div>
-
       {/* Content */}
       <div className="relative z-20 container mx-auto px-4 text-center">
         <motion.div
