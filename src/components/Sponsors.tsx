@@ -16,7 +16,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <section id="sponsors" className="py-20 sm:py-32 bg-muted/20 relative overflow-hidden">
+    <section id="sponsors" className="py-20 sm:py-32  relative overflow-hidden">
       {/* Fog Effect */}
       <div className="absolute inset-0 bg-gradient-radial from-neon-red/5 via-transparent to-transparent opacity-30" />
 
