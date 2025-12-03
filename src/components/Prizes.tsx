@@ -123,7 +123,7 @@ const Prizes = () => {
   const teamItems: PrizeItem[] = [
     { rank: "1st Place", amount: "₹50,000", description: "Champion team", icon: Crown },
     { rank: "2nd Place", amount: "₹40,000", description: "Runner-up team", icon: Medal },
-    { rank: "3rd Place", amount: "₹35,000", description: "Third place team", icon: Trophy },
+    { rank: "3rd Place", amount: "₹35,000", description: "Third place team", icon: Star },
   ];
 
   const individualItems: PrizeItem[] = [
