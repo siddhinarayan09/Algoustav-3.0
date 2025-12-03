@@ -9,7 +9,6 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Stranger Things Theme - Dark Upside Down Palette */
-    --background: 0 0% 4%;
     --foreground: 0 0% 95%;
 
     --card: 0 0% 6%;
@@ -68,9 +67,14 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
+    body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    /* background-image: url('./assets/bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-color: transparent !important; */
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -181,6 +185,7 @@ All colors MUST be HSL.
   }
 }
 
+<<<<<<< HEAD
 .hero-logo-container {
   display: flex;
   justify-content: center;
@@ -271,3 +276,6 @@ All colors MUST be HSL.
   }
 
 }
+=======
+ 
+>>>>>>> 994c7cf6a04707b73a71ad970c6f1bbbb93209b9

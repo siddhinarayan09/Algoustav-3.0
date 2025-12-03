@@ -55,90 +55,78 @@ const Contact = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-8"
-          >
-            {/* Email */}
-            <div className="flex items-start gap-4 group">
-              <div className="flex items-center justify-center w-12 h-12 bg-neon-red/10 border-2 border-neon-red/50 rounded-lg group-hover:animate-glow-pulse flex-shrink-0">
-                <Mail className="text-neon-red" size={24} />
-              </div>
-              <div>
-                <h3 className="font-cinzel text-xl font-semibold text-foreground mb-1">
-                  Email
-                </h3>
-                <a
-                  href="mailto:algoutsav@nitrkl.ac.in"
-                  className="text-neon-red hover:underline"
-                >
-                  algoutsav@nitrkl.ac.in
-                </a>
-              </div>
-            </div>
+  {/* Contact Info */}
+  <motion.div
+    initial={{ opacity: 0, x: -50 }}
+    animate={isInView ? { opacity: 1, x: 0 } : {}}
+    transition={{ duration: 0.8, delay: 0.2 }}
+    className="space-y-8"
+  >
+    {/* Email */}
+    <div className="flex items-start gap-4 group relative overflow-hidden">
+      <div className="absolute inset-0 -left-full w-[175%] h-full bg-gradient-to-r from-transparent via-neon-red/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:left-0 transition-all duration-700 ease-out blur-xl pointer-events-none" />
+      <div className="absolute inset-0 -left-full w-[175%] h-full bg-gradient-to-r from-neon-red/30 via-neon-red/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:left-0 transition-all duration-500 ease-out blur-2xl pointer-events-none" />
+      <div className="flex items-center justify-center w-12 h-12 bg-neon-red/10 border-2 border-neon-red/50 rounded-lg group-hover:animate-glow-pulse flex-shrink-0 relative z-10">
+        <Mail className="text-neon-red" size={24} />
+      </div>
+      <div className="relative z-10">
+        <h3 className="font-cinzel text-xl font-semibold text-foreground mb-1">Email</h3>
+        <a href="mailto:algoutsav@nitrkl.ac.in" className="text-neon-red hover:underline">
+          algoutsav@nitrkl.ac.in
+        </a>
+      </div>
+    </div>
 
-            {/* Social Links */}
-            <div className="flex items-start gap-4 group">
-              <div className="flex items-center justify-center w-12 h-12 bg-neon-red/10 border-2 border-neon-red/50 rounded-lg group-hover:animate-glow-pulse flex-shrink-0">
-                <Instagram className="text-neon-red" size={24} />
-              </div>
-              <div>
-                <h3 className="font-cinzel text-xl font-semibold text-foreground mb-1">
-                  Instagram
-                </h3>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-neon-red hover:underline"
-                >
-                  @algoutsav
-                </a>
-              </div>
-            </div>
+    {/* Instagram */}
+    <div className="flex items-start gap-4 group relative overflow-hidden">
+      <div className="absolute inset-0 -left-full w-[175%] h-full bg-gradient-to-r from-transparent via-neon-red/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:left-0 transition-all duration-700 ease-out blur-xl pointer-events-none" />
+      <div className="absolute inset-0 -left-full w-[175%] h-full bg-gradient-to-r from-neon-red/30 via-neon-red/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:left-0 transition-all duration-500 ease-out blur-2xl pointer-events-none" />
+      <div className="flex items-center justify-center w-12 h-12 bg-neon-red/10 border-2 border-neon-red/50 rounded-lg group-hover:animate-glow-pulse flex-shrink-0 relative z-10">
+        <Instagram className="text-neon-red" size={24} />
+      </div>
+      <div className="relative z-10">
+        <h3 className="font-cinzel text-xl font-semibold text-foreground mb-1">Instagram</h3>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-neon-red hover:underline">
+          @algoutsav
+        </a>
+      </div>
+    </div>
 
-            <div className="flex items-start gap-4 group">
-              <div className="flex items-center justify-center w-12 h-12 bg-neon-red/10 border-2 border-neon-red/50 rounded-lg group-hover:animate-glow-pulse flex-shrink-0">
-                <Linkedin className="text-neon-red" size={24} />
-              </div>
-              <div>
-                <h3 className="font-cinzel text-xl font-semibold text-foreground mb-1">
-                  LinkedIn
-                </h3>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-neon-red hover:underline"
-                >
-                  Algoutsav NIT Rourkela
-                </a>
-              </div>
-            </div>
+    {/* LinkedIn */}
+    <div className="flex items-start gap-4 group relative overflow-hidden">
+      <div className="absolute inset-0 -left-full w-[175%] h-full bg-gradient-to-r from-transparent via-neon-red/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:left-0 transition-all duration-700 ease-out blur-xl pointer-events-none" />
+      <div className="absolute inset-0 -left-full w-[175%] h-full bg-gradient-to-r from-neon-red/30 via-neon-red/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:left-0 transition-all duration-500 ease-out blur-2xl pointer-events-none" />
+      <div className="flex items-center justify-center w-12 h-12 bg-neon-red/10 border-2 border-neon-red/50 rounded-lg group-hover:animate-glow-pulse flex-shrink-0 relative z-10">
+        <Linkedin className="text-neon-red" size={24} />
+      </div>
+      <div className="relative z-10">
+        <h3 className="font-cinzel text-xl font-semibold text-foreground mb-1">LinkedIn</h3>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-neon-red hover:underline">
+          Algoutsav NIT Rourkela
+        </a>
+      </div>
+    </div>
 
-            {/* Location */}
-            <div className="flex items-start gap-4 group">
-              <div className="flex items-center justify-center w-12 h-12 bg-neon-red/10 border-2 border-neon-red/50 rounded-lg group-hover:animate-glow-pulse flex-shrink-0">
-                <MapPin className="text-neon-red" size={24} />
-              </div>
-              <div>
-                <h3 className="font-cinzel text-xl font-semibold text-foreground mb-1">
-                  Location
-                </h3>
-                <p className="text-muted-foreground">
-                  National Institute of Technology
-                  <br />
-                  Rourkela, Odisha 769008
-                </p>
-              </div>
-            </div>
+    {/* Location */}
+    <div className="flex items-start gap-4 group relative overflow-hidden">
+      <div className="absolute inset-0 -left-full w-[175%] h-full bg-gradient-to-r from-transparent via-neon-red/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:left-0 transition-all duration-700 ease-out blur-xl pointer-events-none" />
+      <div className="absolute inset-0 -left-full w-[175%] h-full bg-gradient-to-r from-neon-red/30 via-neon-red/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:left-0 transition-all duration-500 ease-out blur-2xl pointer-events-none" />
+      <div className="flex items-center justify-center w-12 h-12 bg-neon-red/10 border-2 border-neon-red/50 rounded-lg group-hover:animate-glow-pulse flex-shrink-0 relative z-10">
+        <MapPin className="text-neon-red" size={24} />
+      </div>
+      <div className="relative z-10">
+        <h3 className="font-cinzel text-xl font-semibold text-foreground mb-1">Location</h3>
+        <p className="text-muted-foreground">
+          National Institute of Technology
+          <br />
+          Rourkela, Odisha 769008
+        </p>
+      </div>
+    </div>
 
-            {/* Map Placeholder */}
-            <Map/>
-          </motion.div>
+    {/* Map Placeholder */}
+    <Map/>
+  </motion.div>
 
           {/* Contact Form */}
           <motion.div
