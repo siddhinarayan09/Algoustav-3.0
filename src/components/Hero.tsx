@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FileText, ArrowRight } from "lucide-react";
@@ -7,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+  className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
@@ -52,31 +53,24 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <motion.h1
-            className="font-cinzel text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-neon-red mb-6"
-            style={{ textShadow: "var(--text-shadow-glow)" }}
-            animate={{ opacity: [0.9, 1, 0.9] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            Algoutsav 3.0
-          </motion.h1>
+          <div className="hero-logo-container">
+  <img
+    src="https://res.cloudinary.com/dwh7xuupf/image/upload/v1764769922/au_imp_vssnsn.png"
+    alt="Algoutsav 2026"
+    className="hero-logo"
+  />
+</div>
 
-          <motion.h2
-            className="text-2xl sm:text-3xl md:text-4xl font-cinzel text-foreground mb-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.6 }}
-          >
-            NIT Rourkela's Flagship National Hackathon
-          </motion.h2>
 
           <motion.p
-            className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground -mt-16 mb-10 max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.9 }}
           >
-            Enter the Hackathon from the Upside Down.
+            AlgoUtsav is an annual pan-India ICPC-styled Competitive Programming event organized by 
+            the Algorithmic and Programming Society (APS), NIT Rourkela, operating under the Technical Society 
+            of the Student Activity Centre (SAC), of NIT Rourkela.
           </motion.p>
 
           <motion.div
@@ -85,44 +79,26 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.2 }}
           >
-            <Button
-              size="lg"
-              className="bg-neon-red text-primary-foreground hover:bg-neon-red/90 border-2 border-neon-red hover-glow px-8 py-6 text-lg font-semibold group"
-              onClick={() => window.open("https://unstop.com", "_blank")}
-            >
-              Register on Unstop
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <button className="button-49" data-text="Register now"
+            onClick={() => window.open("https://unstop.com", "_blank")}>
+            Register Now
+            </button>
 
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-neon-red text-neon-red hover:bg-neon-red/10 hover-glow px-8 py-6 text-lg font-semibold"
-              onClick={() => window.open("#", "_blank")}
-            >
-              <FileText className="mr-2" />
+
+            <button className="button-49" data-text="Event Brochure"
+            onClick={() => window.open("https://unstop.com", "_blank")}>
               Event Brochure
-            </Button>
+            </button>
           </motion.div>
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <div className="w-6 h-10 border-2 border-neon-red rounded-full flex items-start justify-center p-2">
-            <motion.div
-              className="w-1.5 h-1.5 bg-neon-red rounded-full"
-              animate={{ y: [0, 16, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   );
 };
 
 export default Hero;
+
+
