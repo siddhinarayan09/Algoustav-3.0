@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <motion.p
-            className="text-base sm:text-lg md:text-xl text-muted-foreground -mt-16 mb-10 max-w-3xl mx-auto"
+            className="font-cinzel font-semibold text-base sm:text-lg md:text-xl text-neon-red -mt-16 mb-10 max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.9 }}

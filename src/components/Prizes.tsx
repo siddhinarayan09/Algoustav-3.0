@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Trophy, Medal, Crown, Star, Gift } from "lucide-react";
+import { ScrollVelocityContainer, ScrollVelocityRow } from "./ui/scroll-based-velocity";
 
 type PrizeItem = {
   rank: string;
@@ -133,7 +134,7 @@ const Prizes = () => {
   ];
 
   return (
-    <section id="prizes" className="py-16 sm:py-24 bg-background relative overflow-hidden">
+    <section id="prizes" className="py-30 sm:py-32 bg-background relative overflow-hidden">
       {/* Neon background blobs */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -left-20 top-1/4 w-96 h-96 bg-neon-red/10 rounded-full blur-3xl animate-pulse" />
@@ -210,6 +211,14 @@ const Prizes = () => {
           </div>
         </motion.div>
       </div>
+      <ScrollVelocityContainer className="absolute left-0 w-screen font-cinzel text-xl md:text-2xl font-bold text-neon-red mt-12">
+        <ScrollVelocityRow baseVelocity={5} direction={1}>
+          Prizes worth upto 2 Lakhs! &nbsp; • &nbsp;
+        </ScrollVelocityRow>
+        <ScrollVelocityRow baseVelocity={5} direction={-1}>
+          Electronics, merchandise, goodies and much more for winners & finalists! &nbsp; • &nbsp;
+        </ScrollVelocityRow>
+      </ScrollVelocityContainer>
     </section>
   );
 };

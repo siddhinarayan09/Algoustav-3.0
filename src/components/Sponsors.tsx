@@ -8,11 +8,9 @@ const Sponsors = () => {
 
   // Placeholder sponsor logos (using text as placeholders)
   const sponsors = [
-    { name: "Tech Corp", tier: "Platinum" },
-    { name: "Innovation Labs", tier: "Gold" },
-    { name: "Digital Solutions", tier: "Gold" },
-    { name: "Future Systems", tier: "Silver" },
-    { name: "Code Masters", tier: "Silver" },
+    { name: "Algozenith", src: "/public/algozenith.png" },
+    { name: "Ask Senior", src: "/public/senior.jpg" },
+    { name: "Fastech", src: "/public/fastech.png"  },
   ];
 
   return (
@@ -32,38 +30,29 @@ const Sponsors = () => {
           </h2>
           <div className="w-24 h-1 bg-neon-red mx-auto animate-glow-pulse mb-6" />
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            Powered by industry leaders and innovators
+            Past Sponsors who have supported our mission to foster programming talent.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="flex justify-center gap-6 lg:gap-8 max-w-6xl mx-auto">
           {sponsors.map((sponsor, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.1 + index * 0.1 }}
-              className="bg-card border-2 border-neon-red/30 rounded-lg p-6 aspect-square flex flex-col items-center justify-center hover-glow transition-all group relative overflow-hidden"
+              className="bg-card h-52 w-52 border-2 border-neon-red/30 rounded-lg p-6 aspect-square flex flex-col items-center justify-center hover-glow transition-all group relative overflow-hidden"
               whileHover={{ scale: 1.08 }}
             >
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-radial from-neon-red/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative z-10 text-center">
-                {/* Placeholder Logo */}
-                <div className="w-16 h-16 bg-neon-red/10 border-2 border-neon-red/50 rounded-full flex items-center justify-center mb-3 mx-auto group-hover:animate-glow-pulse">
-                  <span className="text-neon-red font-cinzel font-bold text-xl">
-                    {sponsor.name.charAt(0)}
-                  </span>
-                </div>
-
+                {/* Sponsor Logo */}
+                <img src={sponsor.src} alt={sponsor.name} className="h-40 w-40 mb-2 mx-auto" />
+                
                 {/* Sponsor Name */}
-                <h3 className="font-cinzel font-semibold text-foreground text-sm mb-1 group-hover:text-neon-red transition-colors">
-                  {sponsor.name}
-                </h3>
-
-                {/* Tier */}
-                <span className="text-xs text-neon-red/70 italic">{sponsor.tier}</span>
+                
               </div>
 
               {/* VHS Effect */}
@@ -84,10 +73,10 @@ const Sponsors = () => {
               Interested in Sponsoring?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Join us in empowering the next generation of innovators and engineers.
+              Join us in empowering the next group of passionate programmers.
             </p>
             <a
-              href="mailto:algoutsav@nitrkl.ac.in"
+              href="mailto:algoutsav3.0.nitrkl@gmail.com"
               className="inline-block bg-neon-red text-primary-foreground hover:bg-neon-red/90 font-semibold px-8 py-3 rounded-lg transition-all hover:shadow-[0_0_20px_rgba(228,28,36,0.6)]"
             >
               Contact Us

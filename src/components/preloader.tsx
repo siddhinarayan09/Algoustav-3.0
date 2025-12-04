@@ -285,7 +285,11 @@ const Preloader = ({ onComplete }: PreloaderProps) => {
                 transition={{ duration: 0.3 }}
               >
                 <span className="font-cinzel text-lg sm:text-xl lg:text-2xl font-bold text-primary-foreground">
-                  3.0
+                  <img
+                    src="https://res.cloudinary.com/dwh7xuupf/image/upload/v1764781618/aulogo-removebg-preview_sovesk.png"
+                    alt="Algoutsav Logo"
+                    className="h-14 sm:h-16 w-auto object-contain bg-black rounded-full"
+                  />
                 </span>
               </motion.div>
             </motion.div>
