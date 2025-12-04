@@ -68,7 +68,7 @@ const Navbar = () => {
             >
               <img
                 src="https://res.cloudinary.com/dwh7xuupf/image/upload/v1764781238/aps_logo-removebg-preview_e10glw.png"
-                alt="Algoutsav Logo"
+                alt="APS Logo"
                 className="h-14 sm:h-16 w-auto object-contain"
               />
             </button>

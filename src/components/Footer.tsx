@@ -19,14 +19,14 @@ const Footer = () => {
               Algoutsav 3.0
             </h3>
             <p className="text-muted-foreground text-sm">
-              NIT Rourkela's Flagship National Hackathon
+              NIT Rourkela's Flagship Competitive Programming Contest.
             </p>
           </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <a
-              href="mailto:algoutsav@nitrkl.ac.in"
+              href="mailto:algoutsav3.0nitrkl@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-10 h-10 bg-neon-red/10 border border-neon-red/50 rounded-full hover-glow transition-all hover:bg-neon-red/20"
@@ -35,7 +35,7 @@ const Footer = () => {
               <Mail className="text-neon-red" size={18} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/aps.nitr?igsh=bXlydzhlMTR2c2ll"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-10 h-10 bg-neon-red/10 border border-neon-red/50 rounded-full hover-glow transition-all hover:bg-neon-red/20"
@@ -44,7 +44,7 @@ const Footer = () => {
               <Instagram className="text-neon-red" size={18} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/aps-nitr/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-10 h-10 bg-neon-red/10 border border-neon-red/50 rounded-full hover-glow transition-all hover:bg-neon-red/20"

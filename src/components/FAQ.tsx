@@ -13,42 +13,58 @@ const FAQ = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const faqs = [
-    {
-      question: "What is Algoutsav 3.0?",
-      answer:
-        "Algoutsav 3.0 is NIT Rourkela's flagship national-level hackathon with a Stranger Things theme. It challenges students from across India to create innovative solutions across multiple technology domains through a two-stage competition format.",
-    },
-    {
-      question: "Who can participate?",
-      answer:
-        "Algoutsav 3.0 is open to all undergraduate and postgraduate students from engineering colleges across India. Teams of 2-4 members can register and compete.",
-    },
-    {
-      question: "What is the hackathon format?",
-      answer:
-        "The hackathon consists of two stages: Stage 1 is an online submission phase where teams submit their initial ideas and prototypes. Stage 2 is a 48-hour offline finale at NIT Rourkela campus for selected teams.",
-    },
-    {
-      question: "Where is Stage 2 conducted?",
-      answer:
-        "Stage 2 (the offline finale) will be conducted at NIT Rourkela campus on 10th and 11th January. Selected teams will compete in person with mentorship, workshops, and networking opportunities.",
-    },
-    {
-      question: "What is the registration fee?",
-      answer:
-        "Registration details and fee information will be updated on the Unstop platform. Please check the registration page for the most current information.",
-    },
-    {
-      question: "What are the judging criteria?",
-      answer:
-        "Projects will be evaluated based on innovation, technical implementation, real-world impact, scalability, and presentation quality. A panel of industry experts and professors will assess submissions.",
-    },
-    {
-      question: "What facilities will be provided during Stage 2?",
-      answer:
-        "During the offline finale, participants will receive accommodation, meals, 24/7 workspace access, mentorship from industry experts, high-speed internet, and hardware resources as needed.",
-    },
-  ];
+  {
+    question: "What is AlgoUtsav?",
+    answer:
+      "AlgoUtsav is a national-level competitive programming event organised by the Algorithmic & Programming Society (APS) of NIT Rourkela. It follows an ICPC-style format and features both team and individual rounds."
+  },
+  {
+    question: "Who can participate?",
+    answer:
+      "AlgoUtsav is open to students from all institutes across India—both undergraduate and postgraduate. Team participation is allowed only with students from the same institute."
+  },
+  {
+    question: "What is the team size?",
+    answer:
+      "For the ICPC-style team contest, each team must have 2–3 members. The individual contest (if applicable) is attempted solo."
+  },
+  {
+    question: "Can team members be from different colleges or different years?",
+    answer:
+      "All team members must belong to the same institute. Cross-college teams are not permitted. Students from different academic years within the same college can form a team without restrictions."
+  },
+  {
+    question: "Is there any participation fee?",
+    answer:
+      "No. AlgoUtsav is completely free to participate in—there is no registration or participation fee."
+  },
+  {
+    question: "What is the contest format and schedule?",
+    answer:
+      "The event consists of two stages:\n\n• Preliminary Round: Online, hosted on Codeforces. Team size: 2–3 members. Duration ~2.5 hours.\n\n• Final Round (Offline at NIT Rourkela): Shortlisted teams compete in an ICPC-style team contest on Day 1, followed by an individual contest on Day 2."
+  },
+  {
+    question: "Will students be provided accommodation and food during the offline finals?",
+    answer:
+      "Yes. Accommodation will be provided by the organisers for all shortlisted teams. Further details will be shared closer to the final round."
+  },
+  {
+    question: "Why should I participate in AlgoUtsav?",
+    answer:
+      "AlgoUtsav offers an opportunity to test and sharpen your competitive programming skills, compete with top coders from across India, experience an ICPC-style environment, and win exciting prizes, merchandise, and recognition."
+  },
+  {
+    question: "What are the prizes?",
+    answer:
+      "Team Contest: Cash prizes worth ₹40,000, ₹30,000, and ₹20,000 for the top 3 teams, along with exclusive AlgoUtsav merchandise.\n\nIndividual Contest: Prize pool as listed on Unstop, along with trophies and swags for top performers."
+  },
+  {
+    question: "How can I register for AlgoUtsav?",
+    answer:
+      "Registrations are handled through the official Unstop event page. Teams must be formed prior to registration."
+  }
+];
+
 
   return (
     <section id="faq" className="py-20 sm:py-32 bg-background relative overflow-hidden">
@@ -109,7 +125,7 @@ const FAQ = () => {
             href="mailto:algoutsav@nitrkl.ac.in"
             className="inline-block text-neon-red hover:underline font-semibold"
           >
-            Contact us at algoutsav@nitrkl.ac.in
+            Contact us at algoutsav3.0nitrkl@gmail.com
           </a>
         </motion.div>
       </div>
