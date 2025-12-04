@@ -58,7 +58,7 @@ const About = () => {
           </p>
 
           <Button size="lg" variant="outline" onClick={() => window.open("https://chat.whatsapp.com/CWSSQsaQ4R56i095LfAZS5/")} className="font-cinzel text-lg text-neon-red border-red-800">
-            <img src="/public/WhatsApp_icon.png" alt="WhatsApp Icon" className="h-7 w-7 cursor-pointer" />
+            <img src="https://res.cloudinary.com/dwh7xuupf/image/upload/v1764849842/WhatsApp_icon_jglfyq.png" alt="WhatsApp Icon" className="h-7 w-7 cursor-pointer" />
             Join our Whatsapp Community and stay updated
           </Button>
 

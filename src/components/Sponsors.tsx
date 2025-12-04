@@ -8,9 +8,9 @@ const Sponsors = () => {
 
   // Placeholder sponsor logos (using text as placeholders)
   const sponsors = [
-    { name: "Algozenith", src: "/public/algozenith.png" },
-    { name: "Ask Senior", src: "/public/senior.jpg" },
-    { name: "Fastech", src: "/public/fastech.png"  },
+    { name: "Algozenith", src: "https://res.cloudinary.com/dwh7xuupf/image/upload/v1764849789/algozenith_hgwztq.png" },
+    { name: "Ask Senior", src: "https://res.cloudinary.com/dwh7xuupf/image/upload/v1764849829/senior_bqh8ie.jpg" },
+    { name: "Fastech", src: "https://res.cloudinary.com/dwh7xuupf/image/upload/v1764849813/fastech_k8uxpk.png"  },
   ];
 
   return (
