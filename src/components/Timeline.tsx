@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Calendar, Trophy, Rocket } from "lucide-react";
+import { Trophy, Rocket, Code2 } from "lucide-react";
 
 const Timeline = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -14,22 +14,22 @@ const Timeline = () => {
   const events = [
     {
       date: "16th December",
-      title: "Stage 1: Online Submission Begins",
+      title: "Stage 1: Preliminary Round",
       description:
-        "Registration opens. Submit your innovative ideas and initial prototypes online.",
+        "Teams of 2-3 members attempt to solve a curated set of algorithmic questions within a stipulated time frame.",
       icon: Rocket,
     },
     {
-      date: "20th December",
-      title: "Result Announcement for Stage 1",
-      description: "Selected teams will be notified for the offline finale at NIT Rourkela.",
+      date: "10th January",
+      title: "Stage 2: ICPC Style Team Contest",
+      description: "Selected teams will be invited to NIT Rourkela for an intense ICPC style contest.",
       icon: Trophy,
     },
     {
-      date: "10th & 11th January",
-      title: "Stage 2: Offline Finale at NIT Rourkela",
-      description: "48-hour intensive hackathon on campus with mentorship, prizes, and glory.",
-      icon: Calendar,
+      date: "11th January",
+      title: "Stage 2: Individual Contest",
+      description: "Contestants participate individually and solve problems to showcase their personal skills.",
+      icon: Code2,
     },
   ];
 
@@ -78,7 +78,7 @@ const Timeline = () => {
               >
                 {/* Pointer Circle */}
                 <motion.div
-                  className="absolute left-8 md:left-1/2 w-4 h-4 bg-neon-red rounded-full border-4 border-background transform -translate-x-1/2 z-10"
+                  className="absolute left-6 md:left-[440px] w-4 h-4 bg-neon-red rounded-full border-4 border-background transform -translate-x-1/2 z-10"
                   whileInView={{ scale: [1, 1.3, 1], boxShadow: ["0 0 0px rgba(228, 28, 36, 0.5)", "0 0 20px rgba(228, 28, 36, 1)", "0 0 0px rgba(228, 28, 36, 0.5)"] }}
                   viewport={{ once: true }}
                   transition={{ duration: 1, delay: 0.5 }}
@@ -87,7 +87,7 @@ const Timeline = () => {
                 {/* Content Card */}
                 <div
                   className={`w-full md:w-5/12 ml-20 md:ml-0 ${
-                    index % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"
+                    index % 2 === 0 ? "md:text-right" : ""
                   }`}
                 >
                   <motion.div
@@ -108,7 +108,7 @@ const Timeline = () => {
                           {event.date}
                         </span>
                       </div>
-                      <h3 className="text-2xl font-cinzel font-bold text-foreground mb-2 group-hover:text-neon-red transition-colors">
+                      <h3 className="text-xl font-cinzel font-bold text-foreground mb-2 group-hover:text-neon-red transition-colors">
                         {event.title}
                       </h3>
                       <p className="text-muted-foreground">{event.description}</p>
