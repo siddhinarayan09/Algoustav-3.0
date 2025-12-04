@@ -19,7 +19,7 @@ const App = () => (
         alt="Stranger Things themed dark forest"
         className="w-full h-full object-cover opacity-90"
       />
-      <div className="fixed inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/90" />
+     <div className="fixed inset-0 bg-gradient-to-b from-black/75 via-black/65 to-black/80" />
       {/* Animated Particles */}
       <div className="absolute inset-0 z-10">
         {/* Small bright particles */}
