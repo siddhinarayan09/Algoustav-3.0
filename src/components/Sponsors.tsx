@@ -12,7 +12,7 @@ const Sponsors = () => {
     { name: "Algozenith", src: "https://res.cloudinary.com/dwh7xuupf/image/upload/v1764849789/algozenith_hgwztq.png" },
     { name: "Ask Senior", src: "https://res.cloudinary.com/dwh7xuupf/image/upload/v1764849829/senior_bqh8ie.jpg" },
     { name: "Fastech", src: "https://res.cloudinary.com/dwh7xuupf/image/upload/v1764849813/fastech_k8uxpk.png"  },
-    { name: "ICFDR", src: "" }
+    { name: "ICFDR", src: "https://res.cloudinary.com/dwh7xuupf/image/upload/v1764860313/ngoicfdr_reopth.png" }
   ];
 
   return (
@@ -36,7 +36,7 @@ const Sponsors = () => {
           </p>
         </motion.div>
 
-        <div className="flex justify-center gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
           {sponsors.map((sponsor, index) => (
             <motion.div
               key={index}

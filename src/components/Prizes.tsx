@@ -121,15 +121,15 @@ const Prizes = () => {
   };
 
   const teamItems: PrizeItem[] = [
-    { rank: "1st Place", amount: "₹50,000", description: "Champion team", icon: Crown },
-    { rank: "2nd Place", amount: "₹40,000", description: "Runner-up team", icon: Medal },
-    { rank: "3rd Place", amount: "₹35,000", description: "Third place team", icon: Star },
+    { rank: "1st Place", amount: "upto ₹50,000", description: "Champion team", icon: Crown },
+    { rank: "2nd Place", amount: "upto ₹40,000", description: "Runner-up team", icon: Medal },
+    { rank: "3rd Place", amount: "upto ₹35,000", description: "Third place team", icon: Star },
   ];
 
   const individualItems: PrizeItem[] = [
-    { rank: "1st Place", amount: "₹30,000", description: "Top individual performer", icon: Crown },
-    { rank: "2nd Place", amount: "₹25,000", description: "Second best individual", icon: Medal },
-    { rank: "3rd Place", amount: "₹20,000", description: "Third best individual", icon: Star },
+    { rank: "1st Place", amount: "upto ₹30,000", description: "Top individual performer", icon: Crown },
+    { rank: "2nd Place", amount: "upto ₹25,000", description: "Second best individual", icon: Medal },
+    { rank: "3rd Place", amount: "upto ₹20,000", description: "Third best individual", icon: Star },
   ];
 
   return (
