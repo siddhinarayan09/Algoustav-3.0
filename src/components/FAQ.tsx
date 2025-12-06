@@ -56,7 +56,7 @@ const FAQ = () => {
   {
     question: "What are the prizes?",
     answer:
-      "Team Contest: Cash prizes worth ₹40,000, ₹30,000, and ₹20,000 for the top 3 teams, along with exclusive AlgoUtsav merchandise.\n\nIndividual Contest: Prize pool as listed on Unstop, along with trophies and swags for top performers."
+      "Prize pool as listed on Unstop and in the Prizes section, along with exclusive AlgoUtsav merchandise, trophies and swags for top performers."
   },
   {
     question: "How can I register for AlgoUtsav?",
